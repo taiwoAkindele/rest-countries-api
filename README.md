@@ -15,7 +15,7 @@ Users are able to:
 ### Links
 
 - Solution URL: (https://github.com/taiwoAkindele/rest-countries-api)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://inspiring-arithmetic-541ac0.netlify.app/)
 
 
 ### Built with
