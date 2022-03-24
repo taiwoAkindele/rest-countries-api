@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+:root {
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Very-Dark-Blue: hsl(207, 26%, 17%);
+    --Very-very-Dark-Blue: hsl(200, 15%, 8%);
+    --Dark-Gray: hsl(0, 0%, 52%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    background: var(--White);
+    font-size: 0.8rem;
+    color: var(--Very-very-Dark-Blue);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dark {
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    --countrybgColor: var(--Dark-Blue);
+    --toggleColor: var(--White);
+}
+
+.bar {
+    
+    background: var(--countrybgColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.container .toggle {
+    border: none;
+    color: var(--toggleColor);
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.content{
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.search-box {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 12px;
+    color: var(--Dark-Gray);
+    margin: auto 0;
+    padding: 0 1rem;
+    cursor: pointer;
+
+}
+
+.search {
+    width: 30rem;
+    height: 3rem;
+    background: var(--countrybgColor);
+    border: none;
+    border-radius: 5px;
+    padding: 0 4rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    color: var(--Dark-Gray)
+}
+
+.filter {
+    background: var(--countrybgColor);
+    border-radius: 5px;
+    width: 13rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.filter-down{
+    position: relative;
+    width: 100%;
+    padding: .9rem 1.3rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+button{
+    background: var(--countrybgColor);
+    border: none;
+    text-transform: capitalize;
+    color: var(--toggleColor);
+    font-weight: 800;
+
+}
+
+.drop {
+    position: absolute;
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    color: var(--toggleColor);
+    top: 12.5rem;
+    width: 13rem;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--countrybgColor);
+
+}
+
+.countries {
+    padding: 2rem 3rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
+}
+
+.country{
+    background: var(--countrybgColor);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    min-height: 18.1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.flag {
+    height: 10.4rem;
+
+}
+
+.flag img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.info {
+    padding: 1rem 2rem;
+}
+
+.info h3 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.info p {
+    line-height: 1.5rem;
+}
+
+.info span {
+    opacity: 0.5;
+}
+
+.displayDropdown{
+    display: block;
+}
+
+.countryModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--Dark-Blue);
+    padding: 2rem 3rem;
+}
+
+.back {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background: var(--countrybgColor);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.modal-info {
+    margin-bottom: 3rem;
+}
+
+.modal img{
+    width: 30rem;
+    height: auto;
+}
+
+.leftModal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightModal {
+    width: 50%;
+    margin-left: 1.5rem;
+    
+}
+
+.rightModal h1{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    
+}
+
+.display{
+    display: none;
+    
+}
+
+.borders {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.border {
+    background: var(--countrybgColor);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
